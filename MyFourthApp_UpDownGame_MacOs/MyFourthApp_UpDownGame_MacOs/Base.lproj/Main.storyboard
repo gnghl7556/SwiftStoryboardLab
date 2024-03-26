@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22689"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +675,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MyFourthApp_UpDownGame_MacOs" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -703,15 +705,116 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="MyFourthApp_UpDownGame_MacOs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="2294" height="306"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mQR-HC-7ec">
+                                <rect key="frame" x="18" y="270" width="68" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="guR-hf-mIb"/>
+                                    <constraint firstAttribute="height" constant="16" id="zMa-yd-W1K"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="첫번째 시도:" id="tVv-kl-bgd">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="t8j-ZL-cQC">
+                                <rect key="frame" x="89" y="265" width="96" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="8v2-Vb-ALc"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="DxJ-Zj-9OJ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xyl-Eo-Myy">
+                                <rect key="frame" x="18" y="234" width="34" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="bUG-ZK-Qky"/>
+                                    <constraint firstAttribute="height" constant="16" id="lDR-ml-GhU"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="기록:" id="qBa-JZ-iUO">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xgo-ox-yss">
+                                <rect key="frame" x="235" y="53" width="600" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="8nR-1h-fH0"/>
+                                    <constraint firstAttribute="height" constant="200" id="zIs-rT-bfs"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="?" id="Jc5-hy-MbI">
+                                    <font key="font" metaFont="systemBold" size="100"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BR3-ZY-DPm">
+                                <rect key="frame" x="58" y="53" width="129" height="197"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="2Pv-bB-rS2"/>
+                                    <constraint firstAttribute="height" constant="197" id="gAc-Ji-JK1"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" id="AHC-sp-gEv">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I7m-yh-gYL">
+                                <rect key="frame" x="188" y="258" width="59" height="33"/>
+                                <buttonCell key="cell" type="push" title="선택" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HSx-k4-o3u">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="selectValue:" target="XfG-lQ-9wD" id="C9R-DJ-IPm"/>
+                                    </connections>
+                                </buttonCell>
+                                <color key="bezelColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="l3O-UV-gCb"/>
+                                    <constraint firstAttribute="width" constant="45" id="tJO-7R-KEa"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="BR3-ZY-DPm" firstAttribute="top" secondItem="t8j-ZL-cQC" secondAttribute="bottom" constant="15" id="4EN-7b-WYS"/>
+                            <constraint firstItem="BR3-ZY-DPm" firstAttribute="leading" secondItem="Xyl-Eo-Myy" secondAttribute="trailing" constant="10" id="5of-jw-7lj"/>
+                            <constraint firstItem="Xyl-Eo-Myy" firstAttribute="top" secondItem="mQR-HC-7ec" secondAttribute="bottom" constant="20" id="CFQ-JP-BB8"/>
+                            <constraint firstItem="xgo-ox-yss" firstAttribute="leading" secondItem="BR3-ZY-DPm" secondAttribute="trailing" constant="50" id="CRk-fh-bxZ"/>
+                            <constraint firstItem="xgo-ox-yss" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="Obb-Qh-seN"/>
+                            <constraint firstItem="t8j-ZL-cQC" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="Pnk-np-JCr"/>
+                            <constraint firstItem="mQR-HC-7ec" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="PxG-Rc-z7e"/>
+                            <constraint firstItem="t8j-ZL-cQC" firstAttribute="leading" secondItem="mQR-HC-7ec" secondAttribute="trailing" constant="5" id="ZdO-CB-dgC"/>
+                            <constraint firstItem="I7m-yh-gYL" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="cnv-Wh-amh"/>
+                            <constraint firstItem="mQR-HC-7ec" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="hcu-Es-r9F"/>
+                            <constraint firstItem="Xyl-Eo-Myy" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="u5L-O7-CbX"/>
+                            <constraint firstItem="I7m-yh-gYL" firstAttribute="leading" secondItem="t8j-ZL-cQC" secondAttribute="trailing" constant="10" id="vlw-4A-PPu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countTryLabel" destination="mQR-HC-7ec" id="gKg-Xa-Vd9"/>
+                        <outlet property="inputTextField" destination="t8j-ZL-cQC" id="Ohi-OW-k5T"/>
+                        <outlet property="logListLabel" destination="BR3-ZY-DPm" id="3lN-e2-rZ0"/>
+                        <outlet property="statusViewLabel" destination="Jc5-hy-MbI" id="Eq5-2G-SkJ"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="-178" y="655"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

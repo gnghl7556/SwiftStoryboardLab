@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         decideLabel.text = solution(myChoiceValue, enermyChoice)
         
         // UIAlertController 인스턴스 생성
-        let alertController = UIAlertController(title: "알림", message: "\(enermyChoice)", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "알림", message: "상대방이 낸 값은 : \( Rps.init(rawValue: enermyChoice)!)", preferredStyle: .alert)
 
         // UIAlertAction을 생성하고 "확인" 버튼 추가
         let defaultAction = UIAlertAction(title: "확인", style: .default, handler: { (action) in
