@@ -16,6 +16,7 @@
 		04C197A22BB1869800123911 /* MyThirdAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C197A12BB1869800123911 /* MyThirdAppTests.swift */; };
 		04C197AC2BB1869800123911 /* MyThirdAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C197AB2BB1869800123911 /* MyThirdAppUITests.swift */; };
 		04C197AE2BB1869800123911 /* MyThirdAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C197AD2BB1869800123911 /* MyThirdAppUITestsLaunchTests.swift */; };
+		04C197BB2BB29FB000123911 /* Rps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C197BA2BB29FB000123911 /* Rps.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		04C197A72BB1869800123911 /* MyThirdAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyThirdAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C197AB2BB1869800123911 /* MyThirdAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyThirdAppUITests.swift; sourceTree = "<group>"; };
 		04C197AD2BB1869800123911 /* MyThirdAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyThirdAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04C197BA2BB29FB000123911 /* Rps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rps.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				04C197932BB1869800123911 /* Assets.xcassets */,
 				04C197952BB1869800123911 /* LaunchScreen.storyboard */,
 				04C197982BB1869800123911 /* Info.plist */,
+				04C197BA2BB29FB000123911 /* Rps.swift */,
 			);
 			path = MyThirdApp;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C1978F2BB1869500123911 /* ViewController.swift in Sources */,
+				04C197BB2BB29FB000123911 /* Rps.swift in Sources */,
 				04C1978B2BB1869500123911 /* AppDelegate.swift in Sources */,
 				04C1978D2BB1869500123911 /* SceneDelegate.swift in Sources */,
 			);

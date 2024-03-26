@@ -98,11 +98,12 @@
                                     <constraint firstAttribute="height" constant="200" id="std-l0-nja"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Wh-jr-cyj">
-                                <rect key="frame" x="30" y="582.33333333333337" width="333" height="105.66666666666663"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="0Wh-jr-cyj">
+                                <rect key="frame" x="30" y="585.66666666666663" width="333" height="102.33333333333337"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plY-yX-xr5">
-                                        <rect key="frame" x="0.0" y="0.0" width="105.66666666666667" height="105.66666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="102.33333333333333"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="plY-yX-xr5" secondAttribute="height" multiplier="1:1" id="gXU-d7-BEz"/>
                                         </constraints>
@@ -113,7 +114,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cs-Mc-ZrN">
-                                        <rect key="frame" x="113.66666666666666" y="0.0" width="105.66666666666666" height="105.66666666666667"/>
+                                        <rect key="frame" x="115.33333333333334" y="0.0" width="102.33333333333334" height="102.33333333333333"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8Cs-Mc-ZrN" secondAttribute="height" multiplier="1:1" id="IJd-FR-RdM"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="바위"/>
                                         <connections>
@@ -121,7 +126,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8U4-6H-ki0">
-                                        <rect key="frame" x="227.33333333333329" y="0.0" width="105.66666666666666" height="105.66666666666667"/>
+                                        <rect key="frame" x="230.66666666666671" y="0.0" width="102.33333333333334" height="102.33333333333333"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8U4-6H-ki0" secondAttribute="height" multiplier="1:1" id="T06-Nd-azk"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="보"/>
                                         <connections>
@@ -129,7 +138,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Wg7-Bp-8cI">
